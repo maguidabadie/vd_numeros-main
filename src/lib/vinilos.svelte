@@ -90,10 +90,22 @@
 
 <main id="albumes">
   <div class="albumes1">
-    <h3 class="titulo">TOP 10 ALBUMES MAS VENDIDOS DEL SIGLO XXI</h3>
+    <h3 class="titulo">¿Coinciden las Ventas con el Gusto Joven?</h3>
   </div>
 
   <div class="espacio1"></div>
+
+  <div class="subtitulo">
+    <p class="subtitulo">Los 10 Discos Más Vendidos del Siglo XXI: Éxito comercial vs. valoración generacional.</p>
+  </div>
+  <div class="parrafo">
+    <p class="parrafo">En esta primera sección exploramos los 10 discos más vendidos del siglo XXI 
+    y la puntuación que les asignaron jóvenes de entre 18 y 25 años.<br />
+    ¿El álbum más vendido es también el más querido? 
+    ¿Qué tan alineados están los charts globales con los gustos de una nueva generación?  </p>
+  </div>
+
+  <div class="espacio"></div>
 
   <div class="albumes">
     {#each countArray as n, i}
@@ -155,10 +167,31 @@
 
         {/if}
 
-
-
       </div>
     {/each}
+  </div>
+  <div class="segundaparte">
+    <div class="espacio"></div>
+
+    <div class="subtitulo">
+      <h3 class="subtitulo">Tres formas de arte, una generación para analizarlas.</h3>
+    </div>
+
+    <div class="parrafo">
+        <p class="parrafo">En esta sección comparamos las puntuaciones que jóvenes de 18 a 25 años 
+          dieron a los top 10 de discos, libros y películas del siglo XXI. <br />
+          A través de visualizaciones interactivas, se pueden observar tendencias, contrastes y coincidencias 
+          entre los distintos medios. 
+          ¿Preferimos las historias que se leen, se escuchan o se ven? ¿Qué formato genera mayor conexión emocional? 
+          El análisis busca entender cómo cada expresión artística resuena en la sensibilidad 
+          de una generación en constante transformación. </p>
+    </div>
+    <div class="espacio"></div>
+
+
+    <div class="grafico">
+      <img src="./images/comparacion3.svg" alt="grafico" style="width: 100%;"/>
+    </div>
   </div>
 </main>
 
@@ -384,6 +417,26 @@
     animation-iteration-count: infinite;
     animation-timeline: visibility;    
     
+  }
+  .subtitulo{
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color:#2e1a47c7 ;
+    background-color: #FFFCDA;
+    margin: 0;
+    align-items: center;
+  }
+  .parrafo{
+    font-size: 1;
+    font-family: 'Montserrat', sans-serif;
+    color:#2e1a47c7 ;
+    background-color: #FFFCDA;
+    margin: 0;
+  }
+  .espacio{
+    height: 70px;
+    background-color: #FFFCDA;
   }
 
 </style>
