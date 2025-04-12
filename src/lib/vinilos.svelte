@@ -98,6 +98,7 @@
   <div class="subtitulo">
     <p class="subtitulo">Los 10 Discos Más Vendidos del Siglo XXI: Éxito comercial vs. valoración generacional.</p>
   </div>
+  <div class="espacio"></div>
   <div class="parrafo">
     <p class="parrafo">En esta primera sección exploramos los 10 discos más vendidos del siglo XXI 
     y la puntuación que les asignaron jóvenes de entre 18 y 25 años.<br />
@@ -176,7 +177,7 @@
     <div class="subtitulo">
       <h3 class="subtitulo">Tres formas de arte, una generación para analizarlas.</h3>
     </div>
-
+    <div class="espacio"></div>
     <div class="parrafo">
         <p class="parrafo">En esta sección comparamos las puntuaciones que jóvenes de 18 a 25 años 
           dieron a los top 10 de discos, libros y películas del siglo XXI. <br />
@@ -190,7 +191,7 @@
 
 
     <div class="grafico">
-      <img src="./images/comparacion3.svg" alt="grafico" style="width: 100%;"/>
+      <img src="/images/comparacion3.svg" alt="grafico" style="width: 100%;"/>
     </div>
   </div>
 </main>
@@ -425,7 +426,8 @@
     color:#2e1a47c7 ;
     background-color: #FFFCDA;
     margin: 0;
-    align-items: center;
+    text-align: center; /* Centra el texto horizontalmente */
+    
   }
   .parrafo{
     font-size: 1;
@@ -435,7 +437,7 @@
     margin: 0;
   }
   .espacio{
-    height: 70px;
+    height: 20px;
     background-color: #FFFCDA;
   }
 
