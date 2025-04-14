@@ -188,11 +188,31 @@
           de una generación en constante transformación. </p>
     </div>
     <div class="espacio"></div>
-
-
-    <div class="grafico">
-      <img src="/images/comparacion3.svg" alt="grafico" style="width: 100%;"/>
+    <div class="comparacion" data-src="visualisation/22562989">
+      <script src="https://public.flourish.studio/resources/embed.js"></script>
+      <noscript>
+        <img src="https://public.flourish.studio/visualisation/22562989/thumbnail" alt="chart visualization" />
+      </noscript>
     </div>
+
+    <div class="libros" data-src="visualisation/22590065">
+      <script src="https://public.flourish.studio/resources/embed.js"></script>
+      <noscript><img src="https://public.flourish.studio/visualisation/22590065/thumbnail" width="100%" alt="scatter visualization" />
+      </noscript>
+    </div>
+
+    <div class="peliculas" data-src="visualisation/22589947">
+      <script src="https://public.flourish.studio/resources/embed.js"></script>
+      <noscript><img src="https://public.flourish.studio/visualisation/22589947/thumbnail" width="100%" alt="scatter visualization" />
+      </noscript>
+    </div>
+
+    <div class="discos" data-src="visualisation/22589612">
+      <script src="https://public.flourish.studio/resources/embed.js"></script>
+      <noscript><img src="https://public.flourish.studio/visualisation/22589612/thumbnail" width="100%" alt="scatter visualization" />
+      </noscript>
+    </div>
+
   </div>
 </main>
 
