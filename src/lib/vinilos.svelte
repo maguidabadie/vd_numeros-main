@@ -99,8 +99,8 @@
     <p class="subtitulo">Los 10 Discos Más Vendidos del Siglo XXI: Éxito comercial vs. valoración generacional.</p>
   </div>
   <div class="espacio"></div>
-  <div class="parrafo">
-    <p class="parrafo">En esta primera sección exploramos los 10 discos más vendidos del siglo XXI 
+  <div class="parrafo1">
+    <p class="parrafo1">En esta primera sección exploramos los 10 discos más vendidos del siglo XXI 
     y la puntuación que les asignaron jóvenes de entre 18 y 25 años.<br />
     ¿El álbum más vendido es también el más querido? 
     ¿Qué tan alineados están los charts globales con los gustos de una nueva generación?  </p>
@@ -139,6 +139,7 @@
           </div>
 
         </div>
+        <div class="espacio"></div>
         {:else}
         <div class="album2">
           <div class="texto">
@@ -165,54 +166,51 @@
             />
           </div>
         </div>
-
+        <div class="espacio"></div>
         {/if}
 
       </div>
     {/each}
   </div>
+
   <div class="segundaparte">
-    <div class="espacio"></div>
-
-    <div class="subtitulo">
-      <h3 class="subtitulo">Tres formas de arte, una generación para analizarlas.</h3>
+    <h3 class="subtitulo">Tres formas de arte, una generación para analizarlas.</h3>
+  
+    <p class="parrafo">
+      En esta sección comparamos las puntuaciones que jóvenes de 18 a 25 años 
+      dieron a los top 10 de discos, libros y películas del siglo XXI. <br />
+      A través de visualizaciones interactivas, se pueden observar tendencias, contrastes y coincidencias 
+      entre los distintos medios. 
+      ¿Preferimos las historias que se leen, se escuchan o se ven? ¿Qué formato genera mayor conexión emocional? 
+      El análisis busca entender cómo cada expresión artística resuena en la sensibilidad 
+      de una generación en constante transformación.
+    </p>
+  
+    <div class="grafico-grande">
+      <div class="flourish-embed flourish-chart" data-src="visualisation/22562989">
+        <noscript>
+          <img src="https://public.flourish.studio/visualisation/22562989/thumbnail" alt="chart visualization" />
+        </noscript>
+      </div>
     </div>
-    <div class="espacio"></div>
-    <div class="parrafo">
-        <p class="parrafo">En esta sección comparamos las puntuaciones que jóvenes de 18 a 25 años 
-          dieron a los top 10 de discos, libros y películas del siglo XXI. <br />
-          A través de visualizaciones interactivas, se pueden observar tendencias, contrastes y coincidencias 
-          entre los distintos medios. 
-          ¿Preferimos las historias que se leen, se escuchan o se ven? ¿Qué formato genera mayor conexión emocional? 
-          El análisis busca entender cómo cada expresión artística resuena en la sensibilidad 
-          de una generación en constante transformación. </p>
+  
+    <div class="graficos-chicos">
+      <div class="flourish-embed flourish-chart" data-src="visualisation/22590065">
+        <noscript>
+          <img src="https://public.flourish.studio/visualisation/22590065/thumbnail" width="100%" alt="libros" />
+        </noscript>
+      </div>
+      <div class="flourish-embed flourish-chart" data-src="visualisation/22589947">
+        <noscript>
+          <img src="https://public.flourish.studio/visualisation/22589947/thumbnail" width="100%" alt="peliculas" />
+        </noscript>
+      </div>
+      <div class="flourish-embed flourish-chart" data-src="visualisation/22589612">
+        <noscript>
+          <img src="https://public.flourish.studio/visualisation/22589612/thumbnail" width="100%" alt="discos" />
+        </noscript>
+      </div>
     </div>
-    <div class="espacio"></div>
-    <div class="comparacion" data-src="visualisation/22562989">
-      <script src="https://public.flourish.studio/resources/embed.js"></script>
-      <noscript>
-        <img src="https://public.flourish.studio/visualisation/22562989/thumbnail" alt="chart visualization" />
-      </noscript>
-    </div>
-
-    <div class="libros" data-src="visualisation/22590065">
-      <script src="https://public.flourish.studio/resources/embed.js"></script>
-      <noscript><img src="https://public.flourish.studio/visualisation/22590065/thumbnail" width="100%" alt="scatter visualization" />
-      </noscript>
-    </div>
-
-    <div class="peliculas" data-src="visualisation/22589947">
-      <script src="https://public.flourish.studio/resources/embed.js"></script>
-      <noscript><img src="https://public.flourish.studio/visualisation/22589947/thumbnail" width="100%" alt="scatter visualization" />
-      </noscript>
-    </div>
-
-    <div class="discos" data-src="visualisation/22589612">
-      <script src="https://public.flourish.studio/resources/embed.js"></script>
-      <noscript><img src="https://public.flourish.studio/visualisation/22589612/thumbnail" width="100%" alt="scatter visualization" />
-      </noscript>
-    </div>
-
   </div>
 </main>
 
@@ -423,7 +421,7 @@
   }
 
   .espacio1{
-    height: 170px;
+    height: 190px;
     background-color: #FFFCDA;
   }
 
@@ -443,22 +441,75 @@
     font-size: 2rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    color:#2e1a47c7 ;
     background-color: #FFFCDA;
     margin: 0;
-    text-align: center; /* Centra el texto horizontalmente */
+    text-align: center; 
+    color:#2e1a47c0;
     
   }
-  .parrafo{
-    font-size: 1;
+  .parrafo1{
     font-family: 'Montserrat', sans-serif;
-    color:#2e1a47c7 ;
+    color:#2e1a47c0;
     background-color: #FFFCDA;
     margin: 0;
+    font-size: 1rem;
+    text-align: center;
+    max-width: 100%;
   }
   .espacio{
-    height: 20px;
+    height: 30px;
     background-color: #FFFCDA;
   }
+  .segundaparte {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    gap: 1.5rem;
+    background-color: #FFFCDA;
+    border-radius: 1rem;
+    margin: 2rem auto;
+    max-width: 100%;
+  }
+
+  .subtitulo {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+    color:#2e1a47c0;
+  }
+
+  .parrafo {
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    color:#2e1a47c0;
+    background-color: #FFFCDA;
+    margin: 0;
+    font-size: 1rem;
+    text-align: center;
+    max-width: 750px;
+  }
+
+  .grafico-grande {
+    width: 100%;
+    max-width: 750px;
+  }
+
+  
+  .graficos-chicos {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 100%;
+    flex-wrap: wrap;
+    
+  }
+
+  .graficos-chicos > div {
+    flex: 1 1 300px;
+    min-width: 280px;
+    max-width: 400px;
+  }
+
 
 </style>
