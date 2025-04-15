@@ -179,9 +179,9 @@
     <p class="parrafo">
       En esta sección comparamos las puntuaciones que jóvenes de 18 a 25 años 
       dieron a los top 10 de discos, libros y películas del siglo XXI. <br />
-      A través de visualizaciones interactivas, se pueden observar tendencias, contrastes y coincidencias 
+      A través de visualizaciones, se pueden observar tendencias, contrastes y coincidencias 
       entre los distintos medios. 
-      ¿Preferimos las historias que se leen, se escuchan o se ven? ¿Qué formato genera mayor conexión emocional? 
+      ¿Preferimos las historias que se leen, se escuchan o se ven?  
       El análisis busca entender cómo cada expresión artística resuena en la sensibilidad 
       de una generación en constante transformación.
     </p>
@@ -217,21 +217,37 @@
     </div>
     <div class="parrafo2">
       <p class="parrafo2">
-        Los datos revelan que, si bien los tres formatos —discos, libros y películas— son valorados por los jóvenes, 
-        existen diferencias marcadas en cómo cada uno conecta con ellos. <br /></p>
+        Los gráficos comparativos muestran un patrón claro: 
+        existe una desconexión significativa entre los rankings de prestigio (o ventas) 
+        y las preferencias reales de los jóvenes. Aunque el mercado cultural establece ciertos “tops” como referentes universales, 
+        la generación de entre 18 y 25 años no siempre comparte esa admiración. <br /></p>
         <ul class="parrafo2">
-          <li>Los discos tienden a obtener puntuaciones más polarizadas, 
-            lo que sugiere una conexión emocional intensa pero no necesariamente universal.</li>
-          <li>Los libros, por su parte, muestran una valoración más homogénea, 
-            quizás reflejo de un vínculo introspectivo y reflexivo.</li>
-          <li>Las películas logran un equilibrio entre impacto visual y narrativo, 
-            posicionándose como un formato accesible y emocionalmente potente.</li>
+          <li>En libros, las diferencias son notables especialmente en los primeros puestos. 
+            Obras que ocupan el top 1 y top 3 a nivel general, 
+            son valoradas con puntajes considerablemente más bajos por los jóvenes. 
+            Esto sugiere que los títulos más consagrados no necesariamente representan los intereses de esta generación, 
+            que puede estar buscando nuevas voces, temáticas contemporáneas o formatos más accesibles.</li>
+          <li>En películas, aunque hay casos donde las valoraciones son similares (especialmente en el top 9 y 10), 
+            también se observan grandes brechas en los primeros lugares, 
+            lo que podría indicar una saturación frente a clásicos “intocables” y 
+            una preferencia por relatos más actuales o que aborden problemáticas con las que los 
+            jóvenes se identifican.</li>
+          <li>discos, la tendencia se invierte: los jóvenes valoran mucho más a los álbumes 
+            que figuran en el top de ventas que lo que reflejan los rankings comerciales. 
+            Esto puede indicar que si bien las ventas responden a un contexto de época, 
+            los discos más vendidos siguen resonando emocionalmente en las nuevas generaciones, 
+            ganándose un lugar de culto que trasciende lo puramente comercial.</li>
         </ul>
-        <p class="parrafo2">Desde una mirada generacional, se percibe una preferencia por obras 
-        que interpelan desde lo auténtico: ya sea una letra cruda, 
-        una historia bien contada o una estética visual innovadora. <br />
-        Las tendencias no solo muestran qué se valora más, 
-        sino cómo se valora: no es solo entretenimiento, es identidad, es resonancia, es espejo.
+        <p class="parrafo2">En conjunto, estos gráficos refuerzan una idea central del análisis: 
+          el éxito comercial o el prestigio histórico no siempre garantizan la conexión emocional 
+          con las nuevas generaciones. <br />Mientras que en libros y películas se evidencia una distancia 
+          clara entre los rankings tradicionales y las valoraciones jóvenes, en el caso de los discos 
+          ocurre lo contrario: los jóvenes parecen revalorizar el canon, asignando puntuaciones 
+          incluso más altas que las que figuran en los rankings de ventas. <br />Este hallazgo invita a 
+          reflexionar sobre la forma en que se construyen los “tops” culturales y quiénes quedan fuera 
+          de esas narrativas dominantes. Al mismo tiempo, pone en valor el rol activo de los jóvenes como
+          curadores de su propia cultura, capaces de resignificar el canon con nuevos criterios y sensibilidades. 
+        
       </p>
     </div>
     <div class="espacio"></div>
