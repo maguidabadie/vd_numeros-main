@@ -241,8 +241,20 @@
   </div>
 
 </main>
-
+<footer style="margin-top: 0.25rem; padding: 1rem; font-size: 0.9rem; 
+    background-color: #FFFCDA;
+    color: #2e1a47c0;
+    font-family: 'Montserrat', sans-serif;
+    margin:0;
+    display: flex;
+    justify-content: flex-end;">
+    <!-- text-aling: right;"> -->
+  <a href="https://github.com/maguidabadie/vd_numeros-main" target="_blank" class="text-gray-600 hover:underline">
+    Magdalena Dabadie Boyero. 
+  </a>
+</footer>
 <style>
+  
    .albumes{
     display: flex;
     flex-direction: column;
