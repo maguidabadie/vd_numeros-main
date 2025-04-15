@@ -7,7 +7,6 @@
 </script>
 
 <main class="container">
-  <!-- Barras Isotipos  -->
   <Vinilos
     numbers={numbers}
   />

@@ -12,7 +12,7 @@
 
   let letras = d3.scaleLinear().domain([100, 0]).range(["#FFFCDA", "#F5E56E"]);
 
-  let segundos = d3.scaleLinear().domain([100,0]).range([10,0]);
+  let segundos = d3.scaleLinear().domain([100,0]).range([5, 1]);
 
   let albums = [
     {
@@ -89,7 +89,7 @@
 </script>
 
 <main id="albumes">
-  <div class="albumes1">
+  <div class="titulo">
     <h3 class="titulo">¿Coinciden las Ventas con el Gusto Joven?</h3>
   </div>
 
@@ -98,9 +98,9 @@
   <div class="subtitulo">
     <p class="subtitulo">Los 10 Discos Más Vendidos del Siglo XXI: Éxito comercial vs. valoración generacional.</p>
   </div>
-  <div class="espacio"></div>
-  <div class="parrafo1">
-    <p class="parrafo1">En esta primera sección exploramos los 10 discos más vendidos del siglo XXI 
+
+  <div class="parrafo">
+    <p class="parrafo">En esta primera sección exploramos los 10 discos más vendidos del siglo XXI 
     y la puntuación que les asignaron jóvenes de entre 18 y 25 años.<br />
     ¿El álbum más vendido es también el más querido? 
     ¿Qué tan alineados están los charts globales con los gustos de una nueva generación?  </p>
@@ -132,7 +132,7 @@
 
           <div class="imagen" style="height: {altura(reversedNumbers[n])}px; width: {altura(reversedNumbers[n])}px; animation-duration:{segundos(reversedNumbers[n])}s">
             <img
-              style="heighy: 100%; width: 100%"
+              style="height: 100%; width: 100%"
               src={albums[n].img}
               alt={albums[n].title}
             />
@@ -193,7 +193,11 @@
         </noscript>
       </div>
     </div>
-  
+    <p class="parrafo2">
+      En la siguiente visualización se puede observar la relación entre los tres tipos de arte. 
+      ¿Qué tan alineados están los gustos de los jóvenes con las ventas globales? 
+      ¿Qué tipo de arte genera mayor conexión emocional?
+    </p>
     <div class="graficos-chicos">
       <div class="flourish-embed flourish-chart" data-src="visualisation/22590065">
         <noscript>
@@ -211,7 +215,31 @@
         </noscript>
       </div>
     </div>
+    <div class="parrafo2">
+      <p class="parrafo2">
+        Los datos revelan que, si bien los tres formatos —discos, libros y películas— son valorados por los jóvenes, 
+        existen diferencias marcadas en cómo cada uno conecta con ellos. <br /></p>
+        <ul class="parrafo2">
+          <li>Los discos tienden a obtener puntuaciones más polarizadas, 
+            lo que sugiere una conexión emocional intensa pero no necesariamente universal.</li>
+          <li>Los libros, por su parte, muestran una valoración más homogénea, 
+            quizás reflejo de un vínculo introspectivo y reflexivo.</li>
+          <li>Las películas logran un equilibrio entre impacto visual y narrativo, 
+            posicionándose como un formato accesible y emocionalmente potente.</li>
+        </ul>
+        <p class="parrafo2">Desde una mirada generacional, se percibe una preferencia por obras 
+        que interpelan desde lo auténtico: ya sea una letra cruda, 
+        una historia bien contada o una estética visual innovadora. <br />
+        Las tendencias no solo muestran qué se valora más, 
+        sino cómo se valora: no es solo entretenimiento, es identidad, es resonancia, es espejo.
+      </p>
+    </div>
+    <div class="espacio"></div>
+    <div class="subtitulo">
+      <p class="subtitulo">¿Qué dice de nosotros lo que elegimos amar, escuchar, leer y mirar?</p>
+    <div class="espacio"></div>
   </div>
+
 </main>
 
 <style>
@@ -219,6 +247,7 @@
     display: flex;
     flex-direction: column;
     z-index: -10;
+    
   }
   .fondo{
     width: 100%;
@@ -421,7 +450,7 @@
   }
 
   .espacio1{
-    height: 190px;
+    height: 200px;
     background-color: #FFFCDA;
   }
 
@@ -445,17 +474,43 @@
     margin: 0;
     text-align: center; 
     color:#2e1a47c0;
+    position:relative;
+    z-index: -1;
     
   }
-  .parrafo1{
-    font-family: 'Montserrat', sans-serif;
-    color:#2e1a47c0;
-    background-color: #FFFCDA;
-    margin: 0;
-    font-size: 1rem;
-    text-align: center;
-    max-width: 100%;
-  }
+  .parrafo {
+  font-family: 'Montserrat', sans-serif;
+  color: #2e1a47c0;
+  background-color: #FFFCDA;
+  font-size: 1rem;
+  text-align: center;
+  margin: 0;
+  padding: 2rem;
+  gap: 1.5rem;
+  position:relative;
+  z-index: -1;
+  animation: arriba linear both;
+  animation-timeline: view();
+  animation-range: entry 20% cover 25%;
+}
+.parrafo2 {
+  font-family: 'Montserrat', sans-serif;
+  color: #2e1a47c0;
+  background-color: #FFFCDA;
+  font-size: 1rem;
+  text-align: justify;
+  margin: 2rem auto;
+  padding: 1.5rem 2rem;
+  max-width: 1200px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  position:relative;
+  z-index: -1;
+  animation: arriba linear both;
+  animation-timeline: view();
+  animation-range: entry 20% cover 25%;
+}
+
   .espacio{
     height: 30px;
     background-color: #FFFCDA;
@@ -468,8 +523,9 @@
     gap: 1.5rem;
     background-color: #FFFCDA;
     border-radius: 1rem;
-    margin: 2rem auto;
     max-width: 100%;
+    position: relative;
+    z-index: -3;
   }
 
   .subtitulo {
@@ -477,17 +533,6 @@
     font-weight: 600;
     text-align: center;
     color:#2e1a47c0;
-  }
-
-  .parrafo {
-    font-size: 1rem;
-    font-family: 'Montserrat', sans-serif;
-    color:#2e1a47c0;
-    background-color: #FFFCDA;
-    margin: 0;
-    font-size: 1rem;
-    text-align: center;
-    max-width: 750px;
   }
 
   .grafico-grande {
