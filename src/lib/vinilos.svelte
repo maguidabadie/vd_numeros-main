@@ -252,7 +252,7 @@
     </div>
     <div class="espacio"></div>
     <div class="subtitulo">
-      <p class="subtitulo">¿Qué dice de nosotros lo que elegimos amar, escuchar, leer y mirar?</p>
+      <p class="subtitulo">¿Qué dice de nuestra generación lo que elegimos escuchar, leer y mirar?</p>
     <div class="espacio"></div>
   </div>
 
