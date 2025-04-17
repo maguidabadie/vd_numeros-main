@@ -20,7 +20,7 @@
       title: "21",
       artist: "Adele",
       sales: "43 M de ventas",
-      img: "./images/viniloadele21.svg",
+      img: "./images/viniloadele21.svg",    
     },
     {
       id: "Top 2",
@@ -59,7 +59,7 @@
     },
     {
       id: "Top 7",
-      title: "Falling",
+      title: "Fallen",
       artist: "Evanescence",
       sales: "22 M de ventas",
       img: "./images/vinilofalling.svg",
@@ -107,7 +107,6 @@
   </div>
 
   <div class="espacio"></div>
-
   <div class="albumes">
     {#each countArray as n, i}
       <div class="fondo" style="color:{fondos(reversedNumbers[n])}">
@@ -130,13 +129,19 @@
           </div>
           </div>
 
-          <div class="imagen" style="height: {altura(reversedNumbers[n])}px; width: {altura(reversedNumbers[n])}px; animation-duration:{segundos(reversedNumbers[n])}s">
-            <img
-              style="height: 100%; width: 100%"
-              src={albums[n].img}
-              alt={albums[n].title}
-            />
-          </div>
+         
+            <div
+              class="imagen"
+              style="height: {altura(reversedNumbers[n])}px; width: {altura(reversedNumbers[n])}px; animation-duration:{segundos(reversedNumbers[n])}s"
+            >
+              <img
+                style="height: 100%; width: 100%"
+                src={albums[n].img}
+                alt={albums[n].title}
+                target="_blank"
+              />
+            </div>
+          
 
         </div>
         <div class="espacio"></div>
@@ -158,13 +163,18 @@
           </div>
           </div>
 
-          <div class="imagen" style="height: {altura(reversedNumbers[n])}px; width: {altura(reversedNumbers[n])}px; animation-duration:{segundos(reversedNumbers[n])}s">
-            <img
-              style="height:100%; width:100%"
-              src={albums[n].img}
-              alt={albums[n].title}
-            />
-          </div>
+          
+            <div
+              class="imagen"
+              style="height: {altura(reversedNumbers[n])}px; width: {altura(reversedNumbers[n])}px; animation-duration:{segundos(reversedNumbers[n])}s"
+            >
+              <img
+                style="height: 100%; width: 100%"
+                src={albums[n].img}
+                alt={albums[n].title}
+              />
+            </div>
+          
         </div>
         <div class="espacio"></div>
         {/if}
@@ -174,14 +184,15 @@
   </div>
 
   <div class="segundaparte">
-    <h3 class="subtitulo">Tres formas de arte, una generación para analizarlas.</h3>
+    <div class="espacio"></div>
+    <h3 class="subtitulo">Tres formas de <span class="letra">arte,</span> una generación para analizarlas.</h3>
   
-    <p class="parrafo">
+    <p class="parrafo2">
       En esta sección comparamos las puntuaciones que jóvenes de 18 a 25 años 
-      dieron a los top 10 de discos, libros y películas del siglo XXI. <br />
+      dieron a los top 10 de discos, libros y películas del siglo XXI.
       A través de visualizaciones, se pueden observar tendencias, contrastes y coincidencias 
       entre los distintos medios. 
-      ¿Preferimos las historias que se leen, se escuchan o se ven?  
+      <br />¿Preferimos las historias que se leen, se escuchan o se ven?  
       El análisis busca entender cómo cada expresión artística resuena en la sensibilidad 
       de una generación en constante transformación.
     </p>
@@ -193,12 +204,19 @@
         </noscript>
       </div>
     </div>
-    <p class="parrafo2">
-      En la siguiente visualización se puede observar la relación entre los tres tipos de arte. 
-      ¿Qué tan alineados están los gustos de los jóvenes con las ventas globales? 
+    <div class="espacio"></div>
+    <div class="espacio"></div>
+    <p class="subtitulo"> Observemos las direncias de las valoraciones por separado</p>
+    <p class="parrafo">
+      ¿Qué tan alineados están los gustos de los jóvenes con las ventas globales? <br />
       ¿Qué tipo de arte genera mayor conexión emocional?
     </p>
     <div class="graficos-chicos">
+      <div class="flourish-embed flourish-chart" data-src="visualisation/22589612">
+        <noscript>
+          <img src="https://public.flourish.studio/visualisation/22589612/thumbnail" width="100%" alt="discos" />
+        </noscript>
+      </div>
       <div class="flourish-embed flourish-chart" data-src="visualisation/22590065">
         <noscript>
           <img src="https://public.flourish.studio/visualisation/22590065/thumbnail" width="100%" alt="libros" />
@@ -209,11 +227,7 @@
           <img src="https://public.flourish.studio/visualisation/22589947/thumbnail" width="100%" alt="peliculas" />
         </noscript>
       </div>
-      <div class="flourish-embed flourish-chart" data-src="visualisation/22589612">
-        <noscript>
-          <img src="https://public.flourish.studio/visualisation/22589612/thumbnail" width="100%" alt="discos" />
-        </noscript>
-      </div>
+      
     </div>
     <div class="parrafo2">
       <p class="parrafo2">
@@ -232,7 +246,7 @@
             lo que podría indicar una saturación frente a clásicos “intocables” y 
             una preferencia por relatos más actuales o que aborden problemáticas con las que los 
             jóvenes se identifican.</li>
-          <li>discos, la tendencia se invierte: los jóvenes valoran mucho más a los álbumes 
+          <li>En discos, la tendencia se invierte: los jóvenes valoran mucho más a los álbumes 
             que figuran en el top de ventas que lo que reflejan los rankings comerciales. 
             Esto puede indicar que si bien las ventas responden a un contexto de época, 
             los discos más vendidos siguen resonando emocionalmente en las nuevas generaciones, 
@@ -259,14 +273,17 @@
 </main>
 <footer style="margin-top: 0.25rem; padding: 1rem; font-size: 0.9rem; 
     background-color: #FFFCDA;
-    color: #2e1a47c0;
+    color: #BFB7F6;
     font-family: 'Montserrat', sans-serif;
     margin:0;
+    height: 120px;
     display: flex;
-    justify-content: flex-end;">
-    <!-- text-aling: right;"> -->
-  <a href="https://github.com/maguidabadie/vd_numeros-main" target="_blank" class="text-gray-600 hover:underline">
-    Magdalena Dabadie Boyero. 
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px #BFB7F6 ;">
+    
+  <a href="https://github.com/maguidabadie/vd_numeros-main" target="_blank" style="color: inherit;text-decoration: none">
+    Magdalena Dabadie Boyero. Visualización de datos 2025.
   </a>
 </footer>
 <style>
@@ -275,7 +292,7 @@
     display: flex;
     flex-direction: column;
     z-index: -10;
-    
+    pointer-events: all;
   }
   .fondo{
     width: 100%;
@@ -412,7 +429,13 @@
       animation-range: entry 20% cover 25%;
 
 }
+
+.letra{
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.7rem;
+  color: #2e1a47c0;
   
+}
 
   @keyframes enhance-header{
     from{
@@ -485,14 +508,12 @@
   .imagen{
     grid-area: vinilo;
     margin-bottom: 1rem;
-    z-index: -1;
     justify-items: center;
     align-content: center; 
     animation-timing-function: linear;
     animation-name:rotar;
     animation-iteration-count: infinite;
     animation-timeline: visibility;    
-    
   }
   .subtitulo{
     font-size: 2rem;
