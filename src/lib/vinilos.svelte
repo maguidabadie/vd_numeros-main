@@ -273,7 +273,7 @@
 </main>
 <footer style="margin-top: 0.25rem; padding: 1rem; font-size: 0.9rem; 
     background-color: #FFFCDA;
-    color: #BFB7F6;
+    color: #5619fdc2;
     font-family: 'Montserrat', sans-serif;
     margin:0;
     height: 120px;
